@@ -2,6 +2,8 @@
 import psutil, time, os
 
 nome_do_arquivo = input()
-diretorio = os.listdir('.')
+diretorio = os.listdir()
 if os.path.isfile(nome_do_arquivo):
-    
+    os.system(nome_do_arquivo)
+else:
+    print("Este arquivo não se encontra neste diretorio/não existe")
